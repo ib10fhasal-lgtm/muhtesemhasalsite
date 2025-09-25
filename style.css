@@ -1,0 +1,36 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url("bart-bartsimpson.gif");
+	color: white;
+	margin: 5px;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+}
+main {
+	display:flex;
+	flex-direction: row;
+}
+
+article {
+	border: 2px ridge #B00B5D;
+	flex-basis: 70%;	
+}
+
+aside {
+	flex-basis: 15%;
+}
+
+#absoluteraymou {
+	background-image: url("reymou.gif");
+	background-size: contain;
+	color: grey;
+	height: 200px;
+	vertical-align: bottom;
+	width: 200px;
+}
