@@ -5,13 +5,20 @@
 body {
 	background-image: url("bart-bartsimpson.gif");
 	color: white;
-	margin: 5px;
+	margin: 20px;
 }
 
 header {
 	display: flex;
+	max-height: 100px;
 	flex-direction: row;
+	justify-content: space-between;
 }
+
+nav > a{
+	color: white;
+}
+
 main {
 	display:flex;
 	flex-direction: row;
@@ -26,6 +33,15 @@ aside {
 	flex-basis: 15%;
 }
 
+div.slidercontainer {
+	background-color: purple;
+	height: 1.5em;
+	overflow: hidden;
+	position: relative;
+	white-space: nowrap;
+	width: 100%;
+}
+
 #absoluteraymou {
 	background-image: url("reymou.gif");
 	background-size: contain;
@@ -33,4 +49,18 @@ aside {
 	height: 200px;
 	vertical-align: bottom;
 	width: 200px;
+}
+
+#my {
+	background-color: #FF88AA;
+	border: 2px solid #EA5591;
+	color: white;
+	font-weight: bold;
+	padding: 10px;
+}
+
+
+#slider {
+	font-weight: bold;
+	position: absolute;
 }
