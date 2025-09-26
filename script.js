@@ -7,6 +7,7 @@ const thesummer = new Date("2026-06-26");
 let jumper = null;
 
 window.addEventListener("load", WindowLoad);
+body.addEventListener("keydown", HyperOsaka);
 mysterybutton.addEventListener("click", JumpscareJump);
 mysterybutton.addEventListener("click", JumpscareMove);
 
@@ -20,6 +21,19 @@ function WindowLoad(){
 		summerbreakcounter.innerText = "Yaz tatilin3 " + remainingDate + " milisaniye kaldu";
 		
 		SliderMove(slider);
+}
+
+function HyperOsaka(){
+	let key = event.key;
+	let timer = null;
+	
+	if (key == "o"){
+		body.style.background = 'url("osaka.jpg")';
+		alert("OH MY GAAAHHHHH!!!!1111!!11!1!!!!11!");
+		
+		clearInterval(timer);
+		timer = setInterval(() => {body.style.background = 'url("bart-bartsimpson.gif")'}, 10000);
+	}	
 }
 
 function JumpscareJump(){

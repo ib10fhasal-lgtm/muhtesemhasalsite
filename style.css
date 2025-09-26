@@ -33,6 +33,20 @@ aside {
 	flex-basis: 15%;
 }
 
+aside > div {
+	margin: 5px;
+}
+
+div.importantlist {
+	background-color: #55ADFF;
+	border: 1px solid #399;
+	color: white;
+	padding: 3px;
+	text-decoration: underline;
+	text-decoration-color: #88DDFF;
+	box-shadow: 1px 1px 1px black, -1px -1px 1px black;
+}
+
 div.slidercontainer {
 	background-color: purple;
 	height: 1.5em;
@@ -46,6 +60,8 @@ div.slidercontainer {
 	background-image: url("reymou.gif");
 	background-size: contain;
 	color: grey;
+	font-size: 2em;
+	font-weight: bold;
 	height: 200px;
 	vertical-align: bottom;
 	width: 200px;
@@ -54,6 +70,7 @@ div.slidercontainer {
 #my {
 	background-color: #FF88AA;
 	border: 2px solid #EA5591;
+	border-radius: 5px;
 	color: white;
 	font-weight: bold;
 	padding: 10px;
