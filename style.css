@@ -26,7 +26,8 @@ main {
 
 article {
 	border: 2px ridge #B00B5D;
-	flex-basis: 70%;	
+	flex-basis: 70%;
+	padding: 5px;
 }
 
 aside {
@@ -35,6 +36,12 @@ aside {
 
 aside > div {
 	margin: 5px;
+}
+
+div.history {
+	background-color: #E0D1A3;
+	color: #441;
+	padding: 10px;
 }
 
 div.importantlist {
@@ -49,11 +56,25 @@ div.importantlist {
 
 div.slidercontainer {
 	background-color: purple;
-	height: 1.5em;
+	border: 3px dashed pink;
+	height: 35px;
 	overflow: hidden;
 	position: relative;
 	white-space: nowrap;
 	width: 100%;
+}
+
+.importantlist li > div.subimage {
+	background-color: purple;
+	border: 3px dashed pink;
+	display: none;
+	height: 200px;
+	position: absolute;
+	width: 200px;
+}
+
+.importantlist li:hover > div.subimage {
+	display: block;
 }
 
 #absoluteraymou {
@@ -79,5 +100,10 @@ div.slidercontainer {
 
 #slider {
 	font-weight: bold;
+	height: 35px;
 	position: absolute;
+}
+
+#slider img{
+	vertical-align: middle;
 }
