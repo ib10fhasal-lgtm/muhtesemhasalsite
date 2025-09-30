@@ -10,6 +10,7 @@ window.addEventListener("load", WindowLoad);
 body.addEventListener("keydown", HyperOsaka);
 mysterybutton.addEventListener("click", JumpscareJump);
 mysterybutton.addEventListener("click", JumpscareMove);
+mysterybutton.addEventListener("click", () => {let audio = new Audio("raaaah.mp3"); audio.play();});
 
 function WindowLoad(){
 		let currentDate = new Date();
@@ -24,15 +25,17 @@ function WindowLoad(){
 }
 
 function HyperOsaka(){
+	let audio = new Audio("osaka.mp3");
 	let key = event.key;
 	let timer = null;
 	
 	if (key == "o"){
 		body.style.background = 'url("osaka.jpg")';
+		audio.play();
 		alert("OH MY GAAAHHHHH!!!!1111!!11!1!!!!11!");
 		
 		clearInterval(timer);
-		timer = setInterval(() => {body.style.background = 'url("bart-bartsimpson.gif")'}, 10000);
+		timer = setInterval(() => {body.style.background = 'url("bart-bartsimpson.gif")'}, 24000);
 	}	
 }
 
